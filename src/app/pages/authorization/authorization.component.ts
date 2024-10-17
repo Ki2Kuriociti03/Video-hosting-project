@@ -2,11 +2,14 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-authorization',
-  standalone: true,
-  imports: [],
   templateUrl: './authorization.component.html',
-  styleUrl: './authorization.component.scss'
+  standalone: true,
+  styleUrls: ['./authorization.component.scss']
 })
 export class AuthorizationComponent {
-
+  // Логика компонента
+  onSubmit() {
+    // Здесь может быть вызов сервиса авторизации
+    console.log('Form submitted');
+  }
 }
