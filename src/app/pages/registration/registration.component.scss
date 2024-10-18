@@ -1,0 +1,104 @@
+// Общие стили
+$primary-color: #4a90e2;
+$background-color: #f0f4f8;
+$button-color: #4a90e2;
+$button-hover-color: #357ab7;
+$input-border-color: #d0d7de;
+$input-focus-border-color: $primary-color;
+$box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: $background-color;
+}
+
+.reg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #4a90e2;
+}
+
+.reg-box {
+  width: 100%;
+  max-width: 600px;
+  padding: 80px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: $box-shadow;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: $primary-color;
+  margin-bottom: 40px;
+}
+
+.input-group {
+  margin-bottom: 25px;
+}
+
+input, .reg-button {
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input {
+  border: 2px solid $input-border-color;
+  background-color: #f7fafc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+
+  &:focus {
+    border-color: $input-focus-border-color;
+    background-color: #fff;
+  }
+}
+
+.reg-button {
+  background-color: $button-color;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: $box-shadow;
+
+  &:hover {
+    background-color: $button-hover-color;
+  }
+
+  &:disabled {
+    background-color: #9ec8f0;
+    cursor: not-allowed;
+  }
+}
+
+.forgot-password {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+.forgot-password a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+small {
+  color: red;
+  font-size: 12px;
+}
